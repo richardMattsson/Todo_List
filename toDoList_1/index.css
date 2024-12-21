@@ -1,0 +1,139 @@
+html,
+body {
+  margin: 0; /* Remove default margin to avoid unintended scrolling */
+  padding: 0; /* Remove default padding */
+  overflow: hidden; /* Disable scrolling */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+h1 {
+  margin-left: 20px;
+  color: #000000;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+}
+.dropbtn {
+  margin-right: 20px;
+  margin-top: 20px;
+  align-self: center;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  top: 70%;
+  right: 0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: rgb(207, 207, 207);
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  flex-grow: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  background-color: #fff;
+}
+
+.articleContainer {
+  flex-grow: 1;
+  width: auto;
+  align-self: center;
+}
+
+.addMenu {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  right: 5%;
+}
+.addbtn {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 80%;
+  border: none;
+  cursor: pointer;
+}
+.addMenu-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  bottom: -5%;
+  right: -36%;
+}
+.addbtn:hover {
+  background-color: rgb(166, 162, 162);
+}
+
+.addMenu:hover .addMenu-content {
+  display: block;
+}
+.addMenu-content a {
+  display: block;
+}
+
+footer {
+  background-color: #d9d9d9;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.footerBtn {
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  background-color: inherit;
+}
+.linkIcon:hover {
+  background-color: #cccaca;
+}
+.linkIcon {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.textIcon {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 5px;
+  text-align: center;
+}
